@@ -1,7 +1,6 @@
 class EmpSystem:
     def __init__(self):
         self.employees = []
-
     def create(self, name, age, emp_id, department):
         employee = {
             'name': name,
@@ -10,7 +9,7 @@ class EmpSystem:
             'department': department
         }
         self.employees.append(employee)
-        print("Employee created successfully.")
+        print("Employee created successfully")
 
     def retrieveEmp(self, emp_id):
         for employee in self.employees:
@@ -24,7 +23,7 @@ class EmpSystem:
                 self.employees.remove(employee)
                 print("Employee deleted successfully.")
                 return
-        print("Employee not found.")
+        print("Employee not found")
 
 # Example
 e = EmpSystem()
